@@ -8,6 +8,8 @@ import { useColorScheme } from 'react-native';
 
 import Home from "./screens/Home";
 import Compass from "./screens/Compass";
+import Camera from "./screens/Camera";
+import Map from "./screens/Map";
 
 export const SCREEN_HOME = "Home"
 export const SCREEN_COMPASS = "Compass"
@@ -42,8 +44,8 @@ export default function App() {
         >
           <Tab.Screen name={SCREEN_HOME} component={Home} options={{ title: 'Úvod', headerStyle: { backgroundColor: '#f4511e' } }} />
           <Tab.Screen name={SCREEN_COMPASS} component={Compass} options={{ title: 'Kompas' }} />
-          <Tab.Screen name={SCREEN_MAP} component={Compass} options={{ title: 'Mapa' }} />
-          <Tab.Screen name={SCREEN_CAMERA} component={Compass} options={{ title: 'Kamera' }} />
+          <Tab.Screen name={SCREEN_MAP} component={Map} options={{ title: 'Mapa' }} />
+          <Tab.Screen name={SCREEN_CAMERA} component={Camera} options={{ title: 'Kamera' }} />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
